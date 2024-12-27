@@ -1,0 +1,139 @@
+.auth-page {
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.auth-page:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    color: #a759d1;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    font-family: 'Unbounded', sans-serif;
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #a759d1;
+    box-shadow: 0 0 8px rgba(167, 89, 209, 0.3);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Unbounded', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #b18643;
+    transform: translateY(-3px);
+}
+
+a {
+    color: #a759d1;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Unbounded', sans-serif;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #8261ee;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Unbounded', sans-serif;
+    color: #777;
+}
+
+p a {
+    color: #a759d1;
+}
+@media (max-width: 768px) {
+    .auth-page {
+        padding: 30px;
+        margin: 50px auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .auth-page {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}

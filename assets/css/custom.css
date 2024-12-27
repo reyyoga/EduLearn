@@ -1,0 +1,123 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button i {
+    color: #333;
+}
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;  /* Pusatkan logo dan teks secara vertikal */
+    gap: 20px;  /* Jarak antara logo dan teks */
+    padding-bottom: 18px;
+    z-index: 1;
+}
+
+.logo-img {
+    max-width: 150px; /* Ukuran lebar logo */
+    max-height: 50px; /* Ukuran tinggi logo */
+    height: auto; /* Menjaga proporsi logo */
+    width: auto; /* Menjaga proporsi logo */
+}
+
+.logo-title {
+    font-size: 24px; /* Ukuran font untuk teks EduLearn */
+    font-weight: bold; /* Menebalkan teks */
+    color: #333; /* Warna teks */
+    font-family: Arial, sans-serif; /* Jenis font untuk teks */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Center the modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Width of the modal */
+    max-width: 600px; /* Max width */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close Button */
+  .close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .close-btn:hover,
+  .close-btn:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Header */
+  header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Modal Body */
+  .modal-body {
+    margin-bottom: 20px;
+  }
+  
+  #user-profile-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Logout Button */
+  .btn-logout {
+    display: inline-block;
+    background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-logout:hover {
+    background-color: #e60000;
+  }  

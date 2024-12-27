@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="EduLearn - Empowering education through technology">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>EduLearn</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/livechat.css">
+
+</head>
+
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">
+                            <img src="assets/images/logo.png" alt="" class="logo-img" />
+                            <span class="logo-title">EduLearn</span> <!-- Teks EduLearn -->
+                        </a>
+                        <!-- ***** Logo End ***** -->
+
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li>
+                                <form class="search-bar">
+                                    <input type="text" placeholder="Search for courses..." aria-label="Search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </li>
+                            <li><a href="#welcome" class="active">Home</a></li>
+                            <li><a href="#features">About Us</a></li>
+                            <li><a href="#testimonials">Student Reviews</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                            <li id="signup-nav"><a href="signup.html" class="active">Sign Up</a></li>
+                            <li id="profile-nav" style="display: none;">
+                                <a href="#" id="dropdown-toggle">Profile</a>
+                            </li>
+
+                            <!-- Modal -->
+                            <div id="profile-modal" class="modal">
+                                <div class="modal-content">
+                                    <button class="close-btn" aria-label="Close">&times;</button>
+                                    <header>
+                                        <h2>User Profile</h2>
+                                    </header>
+                                    <div class="modal-body">
+                                        <p id="user-profile-name">User Name</p>
+                                    </div>
+
+                                    <a href="#" id="logout-btn" class="btn btn-logout">Logout</a>
+
+                                </div>
+                            </div>
+
+                            <a href="#" id="livechat-button" class="livechat-button" title="Live Chat"
+                                onclick="toggleChatWindow()">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1370/1370907.png" alt="Live Chat"
+                                    class="livechat-icon"> <!-- Gambar Icon Chat -->
+                            </a>
+
+                            <!-- Live Chat Window -->
+                            <div id="chat-window" class="chat-window">
+                                <div class="chat-header">
+                                    <span>Live Chat</span>
+                                    <button id="close-chat" onclick="toggleChatWindow()">X</button>
+                                </div>
+                                <div id="chat-messages" class="chat-messages">
+                                    <div class="chat-message bot">Hello! How can I assist you with your learning
+                                        journey?</div>
+                                </div>
+                                <div class="chat-input">
+                                    <input type="text" id="user-input" placeholder="Type your message..."
+                                        onkeyup="handleInput(event)">
+                                    <button onclick="sendMessage()">Send</button>
+                                </div>
+                            </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                        <h1>Providing the best <strong>learning strategies</strong><br>to enhance your
+                            <strong>education</strong>
+                        </h1>
+                        <p>EduLearn offers tailored educational resources to help students thrive in their academic
+                            journey. Discover the tools and strategies you need to succeed.</p> <a href="#features"
+                            class="main-button-slider">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section padding-top-70 padding-bottom-0" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="Education">
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">Discover educational opportunities</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>We offer a variety of learning resources, from online courses to tutoring sessions, to
+                            support your academic goals. Whether you want to improve your skills or pursue a degree,
+                            we're here to help!</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section padding-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">Empower Your Learning Journey</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>We believe in the power of knowledge and the importance of continuous learning.
+                            Whether you're looking to enhance your skills, earn certifications, or pursue
+                            advanced studies, we offer a variety of resources designed to support your
+                            educational goals. Join us and take the next step in your learning adventure!</p>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <!-- ***** Testimonials Start ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">What do our students say?</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Our students have achieved remarkable success with our courses and resources. Here's
+                            what they have to say about their learning experience with EduLearn.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+            <div class="container">
+                <div class="row">
+                    <!-- ***** Testimonials Carousel Start ***** -->
+                    <div class="col-12">
+                        <div id="testimonials-carousel" class="testimonials-carousel">
+                            <!-- Testimonial items will be loaded by JavaScript -->
+                        </div>
+                    </div>
+                    <!-- ***** Testimonials Carousel End ***** -->
+                </div>
+
+                <!-- ***** Testimonial Form Start ***** -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <h3>Share Your Testimonial</h3>
+                        <form id="testimonial-form">
+                            <div class="form-group">
+                                <label for="names">Your Name</label>
+                                <input type="text" id="names" class="form-control" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="messages">Your Testimonial</label>
+                                <textarea id="messages" class="form-control" rows="4"
+                                    placeholder="Enter your testimonial" required></textarea>
+                            </div>
+                            <button type="submit" class="main-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Testimonial Form End ***** -->
+            </div>
+
+    </section>
+    <!-- ***** Testimonials End ***** -->
+
+    <!-- ***** Call to Action Start ***** -->
+    <section class="section colored" id="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Join the EduLearn Community Today</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>Take your education to the next level with our online courses and personalized
+                            learning experiences. Join EduLearn and start your educational journey today!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="#contact" class="main-button">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Call to Action End ***** -->
+
+    <!-- ***** Contact Us Start ***** -->
+    <section class="section colored" id="contact-us">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title">Contact Us</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p>If you have any questions or need support with your learning, reach out to us! We are
+                            here to help you succeed.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Contact Text Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5 class="margin-bottom-30">Stay Connected</h5>
+                    <div class="contact-text">
+                        <p>Have questions? Contact us today! You can also follow us on social media for updates.
+                        </p>
+                    </div>
+                </div>
+                <!-- ***** Contact Text End ***** -->
+
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="get">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name"
+                                            placeholder="Full Name" required="true">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email"
+                                            placeholder="E-Mail Address" required="true">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message"
+                                            placeholder="Your Message" required="true"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Send
+                                            Message</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; 2024 EduLearn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/livechat.js"></script>
+
+</body>
+
+</html>
